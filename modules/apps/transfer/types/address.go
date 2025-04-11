@@ -10,10 +10,10 @@ type AddressHandler interface {
 	GetPlumeAddressFromString(ctx sdk.Context, address string) (sdk.AccAddress, error)
 }
 
-type SeiAddressHandler struct{}
+type PlumeAddressHandler struct{}
 
 // GetPlumeAddressFromString parses a bech32 address formatted string and returns the corresponding sdk.AccAddress
-func (h SeiAddressHandler) GetPlumeAddressFromString(_ sdk.Context, address string) (sdk.AccAddress, error) {
+func (h PlumeAddressHandler) GetPlumeAddressFromString(_ sdk.Context, address string) (sdk.AccAddress, error) {
 	parsedAddress, err := sdk.AccAddressFromBech32(address)
 	if err != nil {
 		return nil, err

@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestSeiAddressHandler_GetPlumeAddressFromString(t *testing.T) {
+func TestPlumeAddressHandler_GetPlumeAddressFromString(t *testing.T) {
 	type args struct {
 		address string
 	}
@@ -42,7 +42,7 @@ func TestSeiAddressHandler_GetPlumeAddressFromString(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			h := SeiAddressHandler{}
+			h := PlumeAddressHandler{}
 			got, err := h.GetPlumeAddressFromString(types.Context{}, tt.args.address)
 			if tt.wantErr {
 				require.NotNil(t, err)
