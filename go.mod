@@ -1,4 +1,4 @@
-go 1.18
+go 1.21.0
 
 module github.com/cosmos/ibc-go/v3
 
@@ -14,7 +14,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
 	github.com/rakyll/statik v0.1.7
 	github.com/regen-network/cosmos-proto v0.3.1
-	github.com/spf13/cast v1.5.0
+	github.com/spf13/cast v1.9.2
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/viper v1.13.0
 	github.com/stretchr/testify v1.8.0
